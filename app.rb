@@ -17,14 +17,8 @@ class App < Sinatra::Base
 
     @number = params[:number].to_i
     @phrase = params[:phrase]
-    
-    for i < @number
-      "#{phrase}"
-      i++
-    end
 
-
-
+    "#{@phrase * @number}"
   end
 
   get '/say/:word1/word2/:word3/:word4/:word5' do
